@@ -11,7 +11,7 @@ setup(
     description="A Python library for Telegram automation and group management",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/cyrustet",
+    url="https://github.com/xcophtew/archbyte",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -32,7 +32,7 @@ setup(
     ],
     keywords="telegram automation bot group management spam-detection",
     project_urls={
-        "Bug Reports": "https://github.com/cyrusarch/archbyte/issues",
-        "Source": "https://github.com/cyrusarch/archbyte",
+        "Bug Reports": "https://github.com/xcophtew/archbyte/issues",
+        "Source": "https://github.com/xcophtew/archbyte",
     },
 )
