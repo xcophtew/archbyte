@@ -1,28 +1,38 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
-    name='archbyte',
-    version='0.2.0',
+    name="archbyte",
+    version="0.1.0",
+    author="Cyrus Arch",
+    author_email="server.arch@tuta.io",
+    description="A Python library for Telegram automation and group management",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/cyrustet",
     packages=find_packages(),
-    install_requires=[
-        'flask',
-        'telethon',
-        'python-dotenv',
-    ],
-    entry_points={
-        'console_scripts': [
-        
-        ],
-    },
-    author='Arch Byte',
-    author_email='cophtew@gmail.com',
-    description='Telegram  , discord and Ai focused library ',
-    long_description=open('README.md').read(),
-    long_description_content_type='text/markdown',
-    url='https://github.com//archbyte',
     classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: Developers",
+        "Topic :: Communications :: Chat",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
     ],
+    python_requires=">=3.8",
+    install_requires=[
+        "telethon>=1.24.0",
+    ],
+    keywords="telegram automation bot group management spam-detection",
+    project_urls={
+        "Bug Reports": "https://github.com/cyrusarch/archbyte/issues",
+        "Source": "https://github.com/cyrusarch/archbyte",
+    },
 )
